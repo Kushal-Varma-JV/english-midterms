@@ -1,0 +1,186 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #fdf6fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ---------- Top header ---------- */
+header.site {
+  background: #d6247f;
+  color: #fff;
+  padding: 14px 20px;
+  text-align: center;
+}
+header.site a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* ---------- Chapter jump bar ---------- */
+nav.chapters {
+  background: #fff;
+  border-bottom: 2px solid #f3c1dc;
+  padding: 10px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+nav.chapters .label {
+  font-weight: 600;
+  margin-right: 4px;
+}
+nav.chapters a {
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid #d6247f;
+  color: #d6247f;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+nav.chapters a:hover { background: #fde4f1; }
+nav.chapters a.current {
+  background: #d6247f;
+  color: #fff;
+}
+
+/* ---------- Main area ---------- */
+main {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.chapter-title {
+  text-align: center;
+  margin: 10px 0 18px;
+}
+.chapter-title .num {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #888;
+  font-size: 0.85rem;
+}
+.chapter-title h1 {
+  color: #d6247f;
+  margin: 4px 0;
+}
+.chapter-title .author {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+.chapter-title .meta {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.section-links {
+  text-align: center;
+  margin-bottom: 22px;
+}
+.section-links a {
+  margin: 0 8px;
+  color: #d6247f;
+  font-weight: 600;
+}
+
+section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  border-top: 5px solid #d6247f;
+}
+section h2 {
+  margin-top: 0;
+  color: #d6247f;
+}
+h3 {
+  color: #8a1452;
+  margin-bottom: 6px;
+}
+
+/* ---------- Tip sheet cards ---------- */
+.tips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+.tip-card {
+  background: #fff5fa;
+  border: 1px solid #f3c1dc;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.tip-card h3 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+.tip-card ul {
+  margin: 0;
+  padding-left: 18px;
+}
+.tip-card li { margin-bottom: 3px; }
+
+.hl {
+  background: #ffe066;
+  padding: 0 4px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td {
+  padding: 3px 6px;
+  border-bottom: 1px dashed #f3c1dc;
+  vertical-align: top;
+}
+td:first-child {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+blockquote {
+  margin: 8px 0;
+  padding: 6px 12px;
+  border-left: 4px solid #d6247f;
+  background: #fff5fa;
+  font-style: italic;
+}
+
+ol.flow li { margin-bottom: 6px; }
+
+/* ---------- Previous / Next buttons ---------- */
+.pager {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 30px 0 10px;
+}
+.pager a, .pager span {
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  background: #d6247f;
+}
+.pager a:hover { background: #a81a63; }
+.pager span.disabled { background: #ccc; }
+
+footer {
+  text-align: center;
+  color: #888;
+  font-size: 0.85rem;
+  padding: 20px;
+}
